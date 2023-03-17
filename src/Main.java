@@ -1,5 +1,11 @@
+import java.util.logging.Logger;
+
 public class Main {
+    public static final Logger LOGGER = Logger.getLogger("Slope Field");
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Window window = new Window();
+        CalculatorTab calc = new CalculatorTab();
+        window.addTab(calc);
+        window.show();
     }
 }
